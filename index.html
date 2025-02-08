@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTAGRAM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"  href="styles.css">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram lead"></i><h5 class="d-inline-block fs-3">Instagram</h5></a>
+      
+        <form class="d-grid gap-2 d-md-flex justify-content-md-end" role="search">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" 
+          data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+        </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </li>
+            </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Caption:</h6>
+          <textarea class="form-control" placeholder="Add the caption of your post here"
+                id="floatingTextarea2"></textarea>
+          <div class="row p-2">
+            <button class="col-1 border rounded p-1 m-1 btn-light">
+              <i class="fa-solid fa-camera"></i>
+            </button>
+            <button class="col-1 border rounded p-1 m-1 btn-light">
+              <i class="fa-solid fa-location-dot"></i>
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    .nav-pill .nav-link{
+        color: grey;
+    }
+    .nav-pill .nav-link.active{
+        color: blue;
+    }
+</style>
+
+<div class="container-fluid p-2">
+  <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+              role="tab" aria-controls="home" aria-selected="true"><i
+                  class="fa-solid fa-table-cells"></i></a>
+      </li>
+      <li class="nav-item" role="presentation">
+          <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+              role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+      </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+      
+      <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row">
+              <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://estaticos-cdn.prensaiberica.es/clip/2491fb93-0f4a-4be5-a4bd-ec59aa729007_16-9-discover-aspect-ratio_default_0.jpg" class="img-fluid w-100" alt=""></div>
+              <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://fpestudios.es/wp-content/uploads/2022/11/IFC155_3-Programacion-en-lenguajes-estructurados-de-aplicaciones-de-gestion.png" class="img-fluid w-100" alt=""></div>
+              <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/359550/ss_6e399172cedcb7289017371b9516acb1e774330c.1920x1080.jpg?t=1733419428" class="img-fluid w-100" alt=""></div>
+          </div>
+          <div class="row">
+              <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://aimaformacion.com/wp-content/uploads/2020/03/Redes-Sociales.jpg" class="img-fluid w-100" alt=""></div>
+              <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://soluquisa.es/wp-content/uploads/2021/04/olor-universo.jpg" class="img-fluid w-100" alt=""></div>
+              <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://www.infobae.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-wordpress-client-uploads%2Finfobae-wp%2Fwp-content%2Fuploads%2F2019%2F04%2F24133716%2Favengers-endgame-22.jpg?auth=38fb6f544a2ffb3777ef8617b55c97f2a569a1ad347c438948497e308dc6ec98&smart=true&width=1200&height=630&quality=85" class="img-fluid w-100" alt=""></div>
+          </div>
+          <div class="row">
+              <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://www.comunidad.madrid/sites/default/files/styles/block_teaser_image_horizontal/public/img/objetos/material-deportivo.jpg?itok=eDASFjG5&c=7f2d36aac05c116207d554eed6120fc4" class="img-fluid w-100" alt=""></div>
+              <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://he.kendallhunt.com/sites/default/files/product/Mook-Rulon_Maxwell_9781465278821.jpg" class="img-fluid w-100" alt=""></div>
+              <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://i.pinimg.com/236x/aa/ef/9e/aaef9e1db15ed06b3178be3276fca011.jpg" class="img-fluid w-100" alt=""></div>
+          </div>
+      </div>
+      
+      <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="row my-4">
+              <div class="col-6 mx-auto border rounded p-0">
+                  <div class="d-flex p-2">
+                      <div class="w-100 fs-4">El gol que consiguio llevar a España a la gloria</div>
+                      <small class="align-bottom">01/09</small>
+                  </div>
+                  <img style="object-fit: cover;" src="https://estaticos-cdn.prensaiberica.es/clip/2491fb93-0f4a-4be5-a4bd-ec59aa729007_16-9-discover-aspect-ratio_default_0.jpg" class="img-fluid w-100 col-12" alt=""/>
+                  <div class="p-2">
+                      <strong>1M Likes</strong>
+                      <p>España consigue su primera copa del mundo con el golazo en el minuto 116 de don Andres Iniesta</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row my-4">
+              <div class="col-6 mx-auto border rounded p-0">
+                  <div class="d-flex p-2">
+                      <div class="w-100 fs-4">Programacion un mundo impresionante</div>
+                      <small>02/09</small>
+                  </div>
+                  <img style="object-fit: cover;" src="https://fpestudios.es/wp-content/uploads/2022/11/IFC155_3-Programacion-en-lenguajes-estructurados-de-aplicaciones-de-gestion.png" class="img-fluid w-100 col-12" alt=""/>
+                  <div class="p-2">
+                      <strong>800.000 Likes</strong>
+                      <p>Un mundo impresionante de descubrir donde puedes aprender a programar y ver lo impresionante que es</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row my-4">
+              <div class="col-6 mx-auto border rounded p-0">
+                  <div class="d-flex p-2">
+                      <div class="w-100 fs-4">Rainbow Six Siege</div>
+                      <small>03/09</small>
+                  </div>
+                  <img style="object-fit: cover;" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/359550/ss_6e399172cedcb7289017371b9516acb1e774330c.1920x1080.jpg?t=1733419428" class="img-fluid w-100 col-12" alt=""/>
+                  <div class="p-2">
+                      <strong>500.000 Likes</strong>
+                      <p>Rainbow Six Siege 2 se anunciara muy pronto y sera gratis</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-6 mx-auto border rounded p-0">
+              <div class="d-flex p-2">
+                <div class="w-100 fs-4">Redes Sociales</div>
+                <small>04/09</small>
+              </div>
+              <img style="object-fit: cover;" src="https://aimaformacion.com/wp-content/uploads/2020/03/Redes-Sociales.jpg" class="img-fluid w-100 col-12" alt=""/>
+              <div class="p-2">
+                <strong> Likes</strong>
+                <p>La cantidad de dinero que produce las redes sociales</p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-6 mx-auto border rounded p-0">
+              <div class="d-flex p-2">
+                <div class="w-100 fs-4">La inmensidad infinita del universo</div>
+                <small>05/09</small>
+              </div>
+              <img style="object-fit: cover;" src="https://soluquisa.es/wp-content/uploads/2021/04/olor-universo.jpg" class="img-fluid w-100 col-12" alt=""/>
+              <div class="p-2">
+                <strong>100M Likes</strong>
+                <p>Como se ve en realidad el Universo en primera persona</p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-6 mx-auto border rounded p-0">
+              <div class="d-flex p-2">
+                <div class="w-100 fs-4">PELICULA MAS VISTA</div>
+                <small>06/09</small>
+              </div>
+              <img style="object-fit: cover;" src="https://www.infobae.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-wordpress-client-uploads%2Finfobae-wp%2Fwp-content%2Fuploads%2F2019%2F04%2F24133716%2Favengers-endgame-22.jpg?auth=38fb6f544a2ffb3777ef8617b55c97f2a569a1ad347c438948497e308dc6ec98&smart=true&width=1200&height=630&quality=85" class="img-fluid w-100 col-12" alt=""/>
+              <div class="p-2">
+                <strong>900M Likes</strong>
+                <p>ENDGAME la mejor pelicula de marvel y la ultima</p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-6 mx-auto border rounded p-0">
+              <div class="d-flex p-2">
+                <div class="w-100 fs-4">Las ventajas del deporte</div>
+                <small>07/09</small>
+              </div>
+              <img style="object-fit: cover;" src="https://www.comunidad.madrid/sites/default/files/styles/block_teaser_image_horizontal/public/img/objetos/material-deportivo.jpg?itok=eDASFjG5&c=7f2d36aac05c116207d554eed6120fc4" class="img-fluid w-100 col-12" alt=""/>
+              <div class="p-2">
+                <strong>800M Likes</strong>
+                <p>Es importante moverse y tener el cuerpo en constante movimiento, mejora notablemente la salud y el bien estar</p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-6 mx-auto border rounded p-0">
+              <div class="d-flex p-2">
+                <div class="w-100 fs-4">El RAP/HIP-HOP</div>
+                <small>08/09</small>
+              </div>
+              <img style="object-fit: cover;" src="https://he.kendallhunt.com/sites/default/files/product/Mook-Rulon_Maxwell_9781465278821.jpg" class="img-fluid w-100 col-12" alt=""/>
+              <div class="p-2">
+                <strong>500M Likes</strong>
+                <p>Estos generos representan la realidad, hacen interpretacion de lo que sucede en el dia a dia</p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-6 mx-auto border rounded p-0">
+              <div class="d-flex p-2">
+                <div class="w-100 fs-4">Coches fabulosos</div>
+                <small>09/09</small>
+              </div>
+              <img style="object-fit: cover;" src="https://i.pinimg.com/236x/aa/ef/9e/aaef9e1db15ed06b3178be3276fca011.jpg" class="img-fluid w-100 col-12" alt=""/>
+              <div class="p-2">
+                <strong>900.000 Likes</strong>
+                <p>Impresionantes coches, con una bonita carroceria, coches deportivos</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
