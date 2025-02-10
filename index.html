@@ -9,30 +9,24 @@
     <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
-      <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram lead"></i><h5 class="d-inline-block fs-3">Instagram</h5></a>
-      
-        <form class="d-grid gap-2 d-md-flex justify-content-md-end" role="search">
-          <button type="button" class="btn btn-success" data-bs-toggle="modal" 
-          data-bs-target="#exampleModal">
-          Create a new post
-        </button>
+      <a class="navbar-brand" href="#">
+        <i class="fa-brands fa-instagram lead"></i>
+        <h5 class="d-inline-block fs-3">Instagram</h5>
+      </a>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+          </ul>
         </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                  <li><a class="dropdown-item" href="#">Privacy and Data</a>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                </ul>
-              </li>
-            </ul>
-        </form>
       </div>
     </div>
   </nav>
